@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model, Types } from 'mongoose';
 import { formatDate } from './util.js';
 
 export const reactionSchema = new Schema({
