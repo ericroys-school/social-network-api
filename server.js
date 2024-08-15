@@ -1,4 +1,4 @@
-import {express} from 'express';
+import express from 'express';
 import { connection } from './config/connection.js';
 import { routes } from './routes/index.js'
 
@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(routes);
 
 //connect db then run the node/express service
-db.once('open', () => {
+connection.once('open', () => {
   app.listen(PORT, () => {
     console.log(`API server running on port ${PORT}!`);
   });
