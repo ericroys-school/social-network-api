@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Demonstration of using Node/Express to serve a Restful API using Mongoose ODM for Mongo DB.",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
