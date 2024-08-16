@@ -1,4 +1,6 @@
-[{"_id": "66bfb0c8f4fbe5db87eb17b8","username":"dr.mccoy","email":"dembones@bones.com"},
+[
+{"_id": "66bfb0c8f4fbe5db87eb17b8","username":"dr.mccoy","email":"dembones@bones.com"},
 {"_id": "66bfb0c8f4fbe5db87eb17b9","username":"ahura","email":"lang@4u.com"},
-{"_id": "66bfb0c8f4fbe5db87eb17ba","username":"spock","email":"spock@vulcan.com"}
+{"_id": "66bfb0c8f4fbe5db87eb17ba","username":"spock","email":"spock@vulcan.com"},
+{"_id": "66bfb0c8f4fbe5db87eb18ba","username":"borg_queen","email":"resistance@isfutile.com"}
 ]
