@@ -2,7 +2,6 @@ import express from 'express';
 import { connection } from './config/connection.js';
 import { routes } from './routes/index.js'
 
-
 const PORT = 3001;
 const app = express();
 

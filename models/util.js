@@ -1,8 +1,9 @@
 /**
  * Formats a date into MM/DD/YYYY
- * @param {date} d 
+ * @param {createdAt} d 
  * @returns 
  */
-export const formatDate = (d) => {
+export function formatDate(createdAt) {
+    const d = new Date(createdAt);
     return `${d.getMonth()}/${d.getDay()}/${d.getFullYear()}`;
 }

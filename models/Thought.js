@@ -2,6 +2,9 @@ import { Schema, model } from 'mongoose';
 import { formatDate } from './util.js';
 import { reactionSchema } from './Reaction.js';
 
+/**
+ * Thought schema and model
+ */
 const thoughtSchema = new Schema(
   {
     thoughtText: {
@@ -10,6 +13,7 @@ const thoughtSchema = new Schema(
       min: [1, '1-280 chars required'],
       max: [280, '1-280 chars required'],
     },
+    //use formatted date for query DD/MM/YYYY
     createdAt: { type: Date, default: Date.now, get: formatDate },
     username: { type: String, required: true },
     reactions: [reactionSchema],
@@ -17,6 +21,7 @@ const thoughtSchema = new Schema(
   {
     toJSON: {
       virtuals: true,
+      getters: true
     },
     id: false,
   }

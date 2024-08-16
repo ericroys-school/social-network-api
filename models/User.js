@@ -1,6 +1,9 @@
 import { Schema, model } from "mongoose";
 import { connection } from "../config/connection.js";
 
+/**
+ * User schema and model
+ */
 const userSchema = new Schema(
     {
         username: { type: String, unique: true, required: true},
@@ -15,11 +18,13 @@ const userSchema = new Schema(
                 message: props => `${props.value} is not a valid email`
             }
         },
+        //include thought array from thought model
         thoughts: [
             { type: Schema.Types.ObjectId,
                 ref: 'thought'
             }
         ],
+        //include users from user model into friends array
         friends: [
             { type: Schema.Types.ObjectId,
                 ref: 'user'
@@ -28,7 +33,8 @@ const userSchema = new Schema(
     },
     {
         toJSON: {
-            virtuals: true
+            virtuals: true,
+            getters: true
         },
         id: false,
     }
