@@ -1,4 +1,4 @@
-[{
+[{"_id": "66bfb0c7f4fbe5db87eb17a9",
     "thoughtText": "my simple thought 0",
     "username": "challybone4",
     "reactions": [
@@ -7,32 +7,14 @@
             "username": "cmordonk"
         }
     ]
-  }, {
+  }, {"_id": "66bfb0c7f4fbe5db87eb17ac",
     "thoughtText": "my simple thought 01",
     "username": "rdateg"
   }, {
+    "_id": "66bfb0c7f4fbe5db87eb17ad",
     "thoughtText": "my simple thought 02",
     "username": "cmordonk"
-  }, {
+  }, {"_id": "66bfb0c7f4fbe5db87eb17ae",
     "thoughtText": "my simple thought 03",
     "username": "jmagnarq"
-  }, {
-    "thoughtText": "my simple thought 04",
-    "username": "jmagnarq"
-  }, {
-    "thoughtText": "my simple thought 05",
-    "username": "jpenderv"
-  }, {
-    "thoughtText": "my simple thought 055",
-    "username": "tkreber13"
-  }, {
-    "thoughtText": "my simple thought 06",
-    "username": "gclewlowe14"
-  }, {
-    "thoughtText": "my simple thought 066",
-    "username": "czealy1e"
-  }, {
-    "thoughtText": "my simple thought 07",
-    "username": "rspavon1l"
   }]
-  
