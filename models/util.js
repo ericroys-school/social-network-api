@@ -9,6 +9,6 @@ export function formatDate(createdAt) {
 }
 
 //make sure segment has 2 chars or it just looks silly :-)
-const pad= (num)=>{
-    return num.toString().padStart(2,"0");
-}
+const pad = (num) => {
+  return num.toString().padStart(2, '0');
+};
