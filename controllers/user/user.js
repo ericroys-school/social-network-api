@@ -127,7 +127,7 @@ export const addFriend = async (req, res) => {
       { $addToSet: { friends: req.params.friendId } },
       { runValidators: true, new: true }
     );
-    res.status(200).json({});
+    res.status(200).json(u);
   } catch (err) {
     console.error(err);
     responseError(res, err.message || err);
