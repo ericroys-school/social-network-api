@@ -156,16 +156,21 @@ export const deleteReaction = async (req, res) => {
     responseUserError(res, 'No body provided');
     return;
   }
+  let {reactionId} = req.body;
+  if(!reactionId){
+    responseUserError(res, 'No reactionId provided');
+  return;
+  }
 
   try {
     //remove reaction from exising reactions array if found otherwise return
     // not found message
     const u = await Thought.findOneAndUpdate(
       { _id: req.params.id },
-      { $pull: { reactions: req.body.reactionId } },
+      { $pull: { reactions: {reactionId: reactionId }} },
       { runValidators: true, new: true }
     );
-    res.status(200).json({});
+    res.status(200).json(u);
   } catch (err) {
     console.error(err);
     responseError(res, err.message || err);
